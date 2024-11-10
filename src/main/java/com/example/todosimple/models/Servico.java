@@ -26,14 +26,12 @@ public class Servico {
     @Size(groups = CreateServico.class, min = 2, max = 100)
     private String nomeCliente;
 
-    @Column(name = "enderecoOrigem", length = 100, nullable = false)
+    @Column(name = "enderecoOrigem", nullable = false)
     @NotBlank(groups = CreateServico.class)
-    @Size(groups = CreateServico.class, max = 100)
     private String enderecoOrigem;
 
-    @Column(name = "enderecoEntrega", length = 100, nullable = false)
+    @Column(name = "enderecoEntrega", nullable = false)
     @NotBlank(groups = CreateServico.class)
-    @Size(groups = CreateServico.class, max = 100)
     private String enderecoEntrega;
 
     @Column(name = "dataInicio", nullable = false)
@@ -52,8 +50,7 @@ public class Servico {
     @NotNull(message = "Escolha uma região, será importante!")
     private String regiao;
 
-    @Column(name = "descricao", length = 255, nullable = true)
-    @Size(groups = CreateServico.class, max = 300)
+    @Column(name = "descricao", nullable = true)
     private String descricao;
 
     @ManyToMany
