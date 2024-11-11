@@ -23,7 +23,7 @@ import com.example.todosimple.models.Funcionario;
 import com.example.todosimple.services.FuncionarioService;
 
 @RestController
-@RequestMapping("/Funcionario")
+@RequestMapping("/funcionario")
 @Validated
 public class FuncionarioController {
     
